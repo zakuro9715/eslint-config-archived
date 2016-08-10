@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-zakuro",
+  "version": "1.0.0",
+  "description": "eslint config for me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zakuro9715/eslint-config-zakuro.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Takahiro Yaota <z@kuro.red>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zakuro9715/eslint-config-zakuro/issues"
+  },
+  "homepage": "https://github.com/zakuro9715/eslint-config-zakuro#readme"
+}
