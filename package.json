@@ -6,6 +6,7 @@
   "scripts": {
     "test": "eslint index.js && node test.js"
   },
+  "engines": { "node": ">=6" },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/zakuro9715/eslint-config-zakuro.git"
