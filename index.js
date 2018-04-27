@@ -7,6 +7,8 @@ module.exports = {
   plugins: ['import'],
   rules: {
     'import/no-unresolved': 0,
+    'no-debugger': 1,
+    'no-console': 1,
     semi: ['error', 'never'],
     'lines-around-comment': [
       2,
