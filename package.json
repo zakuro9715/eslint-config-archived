@@ -4,7 +4,9 @@
   "description": "eslint config for me",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js && node test.js"
+    "lint": "eslint --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ignore-path .gitignore .",
+    "test": "node test.js"
   },
   "engines": {
     "node": ">=6"
