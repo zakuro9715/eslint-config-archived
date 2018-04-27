@@ -1,12 +1,12 @@
 var eslint = require('eslint')
 var test = require('tape')
 
-test('config is valid', function (t) {
+test('config is valid', function(t) {
   var CLIEngine = eslint.CLIEngine
 
   var cli = new CLIEngine({
     useEslintrc: false,
-    configFile: 'index.js'
+    configFile: 'index.js',
   })
 
   var code = 'function f() {}\nf()\n'
