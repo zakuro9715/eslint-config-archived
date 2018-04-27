@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ignore-path .gitignore .",
-    "test": "node test.js"
+    "test": "node test.js",
+    "precommit": "lint-staged"
   },
   "engines": {
     "node": ">=6"
@@ -27,12 +28,14 @@
   "homepage": "https://github.com/zakuro9715/eslint-config-zakuro#readme",
   "dependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0"
+    "eslint-config-prettier": "^2.9.0",
+    "husky": "^0.14.3"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "lint-staged": "^7.0.5",
     "prettier": "^1.12.1",
     "tape": "^4.6.0"
   },
@@ -41,5 +44,12 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-prettier": "^2.6.0",
     "prettier": "^1.12.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lintfix",
+      "npm run lint",
+      "git add"
+    ]
   }
 }
