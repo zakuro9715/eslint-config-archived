@@ -6,7 +6,9 @@
   "scripts": {
     "test": "eslint index.js && node test.js"
   },
-  "engines": { "node": ">=6" },
+  "engines": {
+    "node": ">=6"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/zakuro9715/eslint-config-zakuro.git"
@@ -22,15 +24,20 @@
   },
   "homepage": "https://github.com/zakuro9715/eslint-config-zakuro#readme",
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.1.0"
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.12.1",
     "tape": "^4.6.0"
   },
   "peerDependencies": {
     "eslint": "^4.19.1",
-    "eslint-plugin-import": "^2.11.0"
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.12.1"
   }
 }
