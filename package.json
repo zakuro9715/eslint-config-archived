@@ -15,7 +15,7 @@
     "eslint",
     "eslintconfig"
   ],
-  "author": "Takahiro Yaota <z@kuro.red>",
+  "author": "z@kuro <z@kuro.red>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zakuro9715/eslint-config-zakuro/issues"
