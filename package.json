@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-zakuro",
+  "name": "@zakuro9715/eslint-config-zakuro",
   "version": "3.1.0",
   "description": "eslint config for me",
   "main": "index.js",
