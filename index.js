@@ -3,6 +3,8 @@ module.exports = {
     'airbnb-base',
     'eslint:recommended',
     'plugin:prettier/recommended',
+    'plugin:vue/essential',
+    '@vue/prettier',
   ],
   plugins: ['import'],
   rules: {
