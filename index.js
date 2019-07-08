@@ -1,17 +1,26 @@
 module.exports = {
   extends: [
-    'airbnb-base',
     'eslint:recommended',
     'plugin:prettier/recommended',
     'plugin:vue/essential',
     '@vue/prettier',
+    '@vue/standard',
   ],
-  plugins: ['import'],
+  // prettier-ignore
+  plugins: [
+    'prettier',
+    'nuxt',
+    'import',
+    'node',
+    'promise',
+    'standard',
+  ],
   rules: {
     'import/no-unresolved': 0,
     'no-debugger': 1,
     'no-console': 1,
-    semi: ['error', 'never'],
+    'coomma-dangle': ['error', 'always-multiline'],
+    'semi': ['error', 'never'],
     'lines-around-comment': [
       2,
       {
@@ -26,7 +35,7 @@ module.exports = {
       {
         printWidth: 79,
         singleQuote: true,
-        trailingComma: 'es5',
+        trailingComma: 'all',
         arrowParens: 'always',
         semi: false,
       },

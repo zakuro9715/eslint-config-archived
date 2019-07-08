@@ -1,15 +1,15 @@
-var eslint = require('eslint')
-var test = require('tape')
+const eslint = require('eslint')
+const test = require('tape')
 
 test('config is valid', function(t) {
-  var CLIEngine = eslint.CLIEngine
+  const CLIEngine = eslint.CLIEngine
 
-  var cli = new CLIEngine({
+  const cli = new CLIEngine({
     useEslintrc: false,
     configFile: 'index.js',
   })
 
-  var code = 'function f() {}\nf()\n'
+  const code = 'function f() {}\nf()\n'
 
   t.ok(cli.executeOnText(code).errorCount === 0)
   t.end()
