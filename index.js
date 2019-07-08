@@ -19,6 +19,7 @@ module.exports = {
     'no-console': 1,
     'comma-dangle': ['error', 'always-multiline'],
     'semi': ['error', 'never'],
+    'space-before-function-paren': 0,
     'lines-around-comment': [
       2,
       {
