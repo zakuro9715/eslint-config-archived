@@ -1,14 +1,12 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:prettier/recommended',
     'plugin:vue/essential',
-    '@vue/prettier',
+    'plugin:nuxt/recommended',
     '@vue/standard',
+    '@nuxtjs',
   ],
-  // prettier-ignore
   plugins: [
-    'prettier',
     'nuxt',
     'import',
     'node',
@@ -19,7 +17,7 @@ module.exports = {
     'import/no-unresolved': 0,
     'no-debugger': 1,
     'no-console': 1,
-    'coomma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': ['error', 'always-multiline'],
     'semi': ['error', 'never'],
     'lines-around-comment': [
       2,
@@ -28,16 +26,6 @@ module.exports = {
         afterBlockComment: true,
         beforeLineComment: false,
         afterLineComment: false,
-      },
-    ],
-    'prettier/prettier': [
-      2,
-      {
-        printWidth: 79,
-        singleQuote: true,
-        trailingComma: 'all',
-        arrowParens: 'always',
-        semi: false,
       },
     ],
   },
